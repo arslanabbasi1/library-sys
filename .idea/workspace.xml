@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b359cf8-de66-4459-8851-0b366e120095" name="Changes" comment="base line" />
+    <list default="true" id="6b359cf8-de66-4459-8851-0b366e120095" name="Changes" comment="Second Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -238,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633535036066</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Second Commit">
+      <created>1633536326902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633536326902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +264,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="base line" />
-    <option name="LAST_COMMIT_MESSAGE" value="base line" />
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
 </project>
