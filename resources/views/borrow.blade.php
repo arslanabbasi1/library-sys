@@ -1,9 +1,5 @@
 @extends('layouts.app')
-<style>
-    .hidden {
-        display:none;
-    }
-</style>
+
 @section('content')
     <div class="container">
         <form method="POST" action="{{ url('receipt') }}">
@@ -34,8 +30,3 @@
         </form>
     </div>
 @endsection
-<script>
-    $(document).ready(function() {
-        $(".hidden").toggle();
-    });
-</script>
