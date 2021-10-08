@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use App\Book;
 use App\Rack;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -37,7 +38,11 @@ class HomeController extends Controller
         if (count($books)>0) {
             return view('search')->with('books', $books);
         }else {
-            return view('search')->withMessage('No Details found. Try to search again!');
+            return redirect('home')->with('message', 'No Details found. Try to search again!');
         }
+    }
+    public function users(){
+        $users = User::all();
+        return view('users', ['users' => $users]);
     }
 }

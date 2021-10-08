@@ -27,7 +27,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="#"><i class="fas fa-users">Users</i></a></td>
+                        <td><a href="{{ url('admin/users') }}"><i class="fas fa-users">Users</i></a></td>
                         <td><a href="{{ url('admin/racks') }}"><i class="far fa-square">Racks</i></a></td>
                         <td><a href="{{ url('admin/books') }}"><i class="fas fa-book">Books</i></a></td>
                     </tr>

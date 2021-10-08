@@ -29,6 +29,13 @@
             </form>
             <br>
             <br>
+            @if (Session::has('message'))
+                <div class="alert alert-danger">
+                    <ul>
+                        <li>{!! Session::get('message') !!}</li>
+                    </ul>
+                </div>
+            @endif
             @foreach($racks as $rack)
             <h2 class="text-2xl font-bold mb-4">{{$rack->name}}</h2>
             <table class="table">

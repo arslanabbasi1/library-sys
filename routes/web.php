@@ -22,6 +22,7 @@ Route::get('home', 'HomeController@index')->name('home');
 Route::post('home/search', 'HomeController@search');
 Route::middleware([CheckAdmin::class])->group(function () {
     Route::get('admin', 'HomeController@admin');
+    Route::get('admin/users', 'HomeController@users');
     Route::get('admin/racks', 'RackController@index')->name('index');
     Route::get('admin/racks/create', 'RackController@create')->name('create');
     Route::post('admin/racks', 'RackController@store')->name('store');
