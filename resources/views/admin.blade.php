@@ -22,12 +22,14 @@
             <table class="table">
                 <thead>
                     <th>Users</th>
+                    <th>Authors</th>
                     <th>Racks</th>
                     <th>Books</th>
                 </thead>
                 <tbody>
                     <tr>
                         <td><a href="{{ url('admin/users') }}"><i class="fas fa-users">Users</i></a></td>
+                        <td><a href="{{ url('admin/authors') }}"><i class="fas fa-users">Authors</i></a></td>
                         <td><a href="{{ url('admin/racks') }}"><i class="far fa-square">Racks</i></a></td>
                         <td><a href="{{ url('admin/books') }}"><i class="fas fa-book">Books</i></a></td>
                     </tr>

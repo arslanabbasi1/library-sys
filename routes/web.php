@@ -23,6 +23,12 @@ Route::post('home/search', 'HomeController@search');
 Route::middleware([CheckAdmin::class])->group(function () {
     Route::get('admin', 'HomeController@admin');
     Route::get('admin/users', 'HomeController@users');
+    Route::get('admin/authors', 'AuthorController@index')->name('index');
+    Route::get('admin/authors/create', 'AuthorController@create')->name('create');
+    Route::post('admin/authors', 'AuthorController@store')->name('store');
+    Route::get('admin/authors/{author}/edit', 'AuthorController@edit')->name('edit');
+    Route::put('admin/authors/{author}', 'AuthorController@update')->name('update');
+    Route::delete('/admin/authors/{author}', 'AuthorController@destroy')->name('destroy');
     Route::get('admin/racks', 'RackController@index')->name('index');
     Route::get('admin/racks/create', 'RackController@create')->name('create');
     Route::post('admin/racks', 'RackController@store')->name('store');
