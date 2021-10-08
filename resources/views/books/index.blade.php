@@ -18,6 +18,7 @@
                 <th>Author Name</th>
                 <th>Published Year</th>
                 <th>Rack</th>
+                <th>Price</th>
                 <th colspan="2">Action</th>
             </tr>
             </thead>
@@ -28,6 +29,7 @@
                     <td>{{$book->author->name}}</td>
                     <td>{{$book->published_year}}</td>
                     <td>{{$book->rack->name}}</td>
+                    <td>{{$book->price}}</td>
                     <td>
                         <a class="btn btn-secondary" href="{{ url('admin/books/'.$book->id.'/edit') }}">Edit</a>
                         <br>

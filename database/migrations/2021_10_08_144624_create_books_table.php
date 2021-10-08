@@ -21,6 +21,7 @@ class CreateBooksTable extends Migration
             $table->string('published_year');
             $table->unsignedBigInteger('rack_id');
             $table->foreign('rack_id')->references('id')->on('racks');
+            $table->string('price');
             $table->timestamps();
         });
     }

@@ -20,6 +20,7 @@ Auth::routes();
 
 Route::get('home', 'HomeController@index')->name('home');
 Route::post('home/search', 'HomeController@search');
+Route::get('home/borrow', 'HomeController@borrow');
 Route::middleware([CheckAdmin::class])->group(function () {
     Route::get('admin', 'HomeController@admin');
     Route::get('admin/users', 'HomeController@users');

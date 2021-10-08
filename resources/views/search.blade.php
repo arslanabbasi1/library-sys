@@ -9,14 +9,16 @@
                     <th>Name</th>
                     <th>Author Name</th>
                     <th>Published Year</th>
+                    <th>Price</th>
                 </tr>
                 </thead>
                 <tbody>
                 @foreach($books as $book)
                     <tr>
                         <td>{{$book->name}}</td>
-                        <td>{{$book->author_name}}</td>
+                        <td>{{$book->author->name}}</td>
                         <td>{{$book->published_year}}</td>
+                        <td>{{$book->price}}</td>
                     </tr>
                 @endforeach
                 </tbody>

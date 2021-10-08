@@ -12,7 +12,8 @@ class Book extends Model
         'name',
         'author_id',
         'published_year',
-        'rack_id'
+        'rack_id',
+        'price'
     ];
     protected $guarded = [];
     public function author(){

@@ -27,13 +27,15 @@ class BookController extends Controller{
                 'name' => 'required',
                 'author_id' => 'required',
                 'published_year' => 'required',
-                'rack_id' => 'required'
+                'rack_id' => 'required',
+                'price' => 'required'
             ]);
             Book::create([
                 'name' => request('name'),
                 'author_id' => request('author_id'),
                 'published_year' => request('published_year'),
-                'rack_id' => request('rack_id')
+                'rack_id' => request('rack_id'),
+                'price' => request('price')
             ]);
             return redirect('admin/books');
         }

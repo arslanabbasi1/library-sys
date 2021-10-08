@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Input;
 use App\Book;
 use App\Rack;
 use App\User;
+use App\Author;
 
 class HomeController extends Controller
 {
@@ -44,5 +45,10 @@ class HomeController extends Controller
     public function users(){
         $users = User::all();
         return view('users', ['users' => $users]);
+    }
+    public function borrow(){
+        $books = Book::all();
+        $authors = Author::all();
+        return view('borrow', ['books' => $books, 'authors' => $authors]);
     }
 }

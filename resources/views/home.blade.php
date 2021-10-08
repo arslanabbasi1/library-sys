@@ -19,6 +19,9 @@
 {{--        </div>--}}
         <div style="width: 900px;" class="container max-w-full mx-auto pt-4">
             <h1 class="text-4xl text-center font-bold mb-4">Library</h1>
+            <a class="btn btn-primary" href="{{ url('home/borrow') }}">Borrow</a>
+            <br>
+            <br>
             <form action="{{url('home/search')}}" method="POST" role="search">
                 {{ csrf_field() }}
                 <div class="input-group">
@@ -43,13 +46,15 @@
                 <th>Book Name</th>
                 <th>Author Name</th>
                 <th>Published Year</th>
+                <th>Price</th>
                 </thead>
                 @foreach($rack->books as $book)
                     <tbody>
                         <tr>
                             <td>{{$book->name}}</td>
-                            <td>{{$book->author_name}}</td>
+                            <td>{{$book->author->name}}</td>
                             <td>{{$book->published_year}}</td>
+                            <td>{{$book->price}}</td>
                         </tr>
                     </tbody>
                 @endforeach

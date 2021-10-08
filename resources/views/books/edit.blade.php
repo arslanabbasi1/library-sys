@@ -23,6 +23,8 @@
                         <option value="{{$rack->id}}">{{$rack->name}}</option>
                     @endforeach
                 </select>
+                <label class="price" for="price">Price: </label>
+                <input class="form-control" id="price" name="price" type="number" value="{{$book->price}}">
             </div>
             <button class="btn btn-success" type="submit">Update</button>
             <a href="{{url('admin/books')}}" class="btn btn-secondary">Cancel</a>
