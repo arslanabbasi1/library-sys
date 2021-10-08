@@ -25,7 +25,7 @@
                 <tbody>
                 <tr>
                     <td>{{$book->name}}</td>
-                    <td>{{$book->author_name}}</td>
+                    <td>{{$book->author->name}}</td>
                     <td>{{$book->published_year}}</td>
                     <td>{{$book->rack->name}}</td>
                     <td>
