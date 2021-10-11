@@ -46,9 +46,20 @@ class HomeController extends Controller
         $users = User::all();
         return view('users', ['users' => $users]);
     }
+    public function receipt(){
+        $books = Book::all();
+        $authors = Author::all();
+        $users = User::all();
+        return view('receipt', ['books' => $books, 'authors' => $authors, 'users' => $users]);
+    }
     public function borrow(){
         $books = Book::all();
         $authors = Author::all();
         return view('borrow', ['books' => $books, 'authors' => $authors]);
+    }
+    public function getBookDetails(Request $request){
+        $books = Book::all();
+        $authors = Author::all();
+        return json_encode(array('books' => $books, 'authors' => $authors));
     }
 }

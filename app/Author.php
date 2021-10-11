@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Book;
+use App\Borrow;
 
 class Author extends Model
 {
@@ -13,5 +14,8 @@ class Author extends Model
     ];
     public function books(){
         return $this->hasmany('App\Book');
+    }
+    public function borrow(){
+        return $this->belongsTo('App\Borrow');
     }
 }

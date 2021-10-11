@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use App\Rack;
 use App\Author;
+use App\Borrow;
 
 class Book extends Model
 {
@@ -21,5 +22,8 @@ class Book extends Model
     }
     public function rack(){
         return $this->belongsTo('App\Rack', 'rack_id');
+    }
+    public function borrow(){
+        return $this->belongsTo('App\Borrow', 'borrow_id');
     }
 }
