@@ -22,7 +22,8 @@ Route::get('home', 'HomeController@index')->name('home');
 Route::post('home/search', 'HomeController@search');
 Route::get('home/borrow', 'HomeController@borrow');
 Route::post('home/borrow', 'HomeController@getBookDetails');
-Route::post('home/borrow/receipt', 'HomeController@receipt');
+Route::get('home/borrow/{id}/receipt', 'BorrowController@receipt');
+Route::post('home/borrow/receipt', 'BorrowController@borrow');
 Route::middleware([CheckAdmin::class])->group(function () {
     Route::get('admin', 'HomeController@admin');
     Route::get('admin/users', 'HomeController@users');

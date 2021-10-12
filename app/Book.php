@@ -24,6 +24,6 @@ class Book extends Model
         return $this->belongsTo('App\Rack', 'rack_id');
     }
     public function borrow(){
-        return $this->belongsTo('App\Borrow', 'borrow_id');
+        return $this->hasMany('App\Borrow');
     }
 }

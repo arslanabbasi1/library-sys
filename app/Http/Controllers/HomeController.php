@@ -8,15 +8,13 @@ use App\Rack;
 use App\User;
 use App\Author;
 
-class HomeController extends Controller
-{
+class HomeController extends Controller{
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct(){
         $this->middleware('auth');
     }
 
@@ -35,7 +33,6 @@ class HomeController extends Controller
     public function search(Request $request){
         $book = $request->book;
         $books = Book::where('name', 'LIKE', '%'.$book.'%')->get();
-
         if (count($books)>0) {
             return view('search')->with('books', $books);
         }else {
@@ -58,8 +55,8 @@ class HomeController extends Controller
         return view('borrow', ['books' => $books, 'authors' => $authors]);
     }
     public function getBookDetails(Request $request){
-        $books = Book::all();
-        $authors = Author::all();
-        return json_encode(array('books' => $books, 'authors' => $authors));
+        $book = Book::find($request->book_id);
+        $author = $book->author->name;
+        return json_encode(array('book' => $book, 'author' => $author));
     }
 }
