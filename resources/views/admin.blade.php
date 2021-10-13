@@ -18,7 +18,7 @@
 {{--            </div>--}}
 {{--        </div>--}}
         <div style="width: 900px;" class="container max-w-full mx-auto pt-4">
-            <h1 class="text-4xl font-bold mb-4">Library</h1>
+            <h1 class="text-4xl text-center font-bold mb-4">Library</h1>
             <table class="table">
                 <thead>
                     <th>Users</th>
@@ -30,7 +30,7 @@
                     <tr>
                         <td><a href="{{ url('admin/users') }}"><i class="fas fa-users">Users</i></a></td>
                         <td><a href="{{ url('admin/authors') }}"><i class="fas fa-users">Authors</i></a></td>
-                        <td><a href="{{ url('admin/racks') }}"><i class="far fa-square">Racks</i></a></td>
+                        <td><a href="{{ url('admin/racks') }}"><i class="fas fa-square">Racks</i></a></td>
                         <td><a href="{{ url('admin/books') }}"><i class="fas fa-book">Books</i></a></td>
                     </tr>
                 </tbody>

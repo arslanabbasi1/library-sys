@@ -6,13 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6b359cf8-de66-4459-8851-0b366e120095" name="Changes" comment="Second Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Book.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Borrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Borrow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_11_133239_create_borrows_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_10_11_133239_create_borrows_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/borrow.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/borrow.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BorrowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BorrowController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_10_04_101050_create_authors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_10_04_101050_create_authors_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/receipt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/receipt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +245,8 @@
       <workItem from="1633937376645" duration="95000" />
       <workItem from="1633939603687" duration="1350000" />
       <workItem from="1633941736219" duration="19130000" />
-      <workItem from="1634023415984" duration="26769000" />
+      <workItem from="1634023415984" duration="27114000" />
+      <workItem from="1634076186899" duration="15581000" />
     </task>
     <task id="LOCAL-00001" summary="base line">
       <created>1633534941852</created>

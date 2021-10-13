@@ -16,7 +16,7 @@ class CreateAuthorsTable extends Migration
         Schema::create('authors', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('remaining_balance');
+            $table->float('remaining_balance')->nullable();
             $table->timestamps();
         });
     }

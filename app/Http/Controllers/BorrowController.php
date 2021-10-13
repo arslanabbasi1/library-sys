@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\IUser;
 use Illuminate\Http\Request;
 use App\Borrow;
 use App\Book;
@@ -31,6 +32,17 @@ class BorrowController extends Controller{
             'days' => request('days'),
             'total_price' => $book->price * request('days')
         ]);
+
+        $newBalance = $borrow->total_price / 2;
+
+        $author = Author::find($book->author_id);
+        $author->remaining_balance = $author->remaining_balance + $newBalance;
+        $author->save();
+
+        $admin = User::where('role', IUser::ADMIN_ROLE)->first();
+        $admin->remaining_balance = $admin->remaining_balance + $newBalance;
+        $admin->save();
+
         return redirect('home/borrow/'.$borrow->id.'/receipt');
     }
 }

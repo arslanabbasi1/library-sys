@@ -9,6 +9,7 @@
                     <th>Name</th>
                     <th>Email Address</th>
                     <th>Role</th>
+                    <th>Remaining Balance</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -17,6 +18,7 @@
                         <td>{{$user->name}}</td>
                         <td>{{$user->email}}</td>
                         <td>{{$user->role}}</td>
+                        <td>{{$user->remaining_balance}}</td>
                     </tr>
                 @endforeach
                 </tbody>

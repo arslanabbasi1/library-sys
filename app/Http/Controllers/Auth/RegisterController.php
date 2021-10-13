@@ -69,6 +69,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'remaining_balance' => 0,
             'role' => \App\Services\IUser::CLIENT_ROLE
         ]);
     }
